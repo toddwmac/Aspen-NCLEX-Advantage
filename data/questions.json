@@ -1,30 +1,169 @@
 {
-    "questions": [
-      {
-        "id": 1,
-        "question": "What is the normal blood pressure range for an adult?",
-        "answers": [
-          "90/60 to 120/80 mmHg",
-          "70/40 to 90/60 mmHg",
-          "130/90 to 150/100 mmHg"
-        ],
-        "correct": 0,
-        "explanation": "Normal adult blood pressure is considered to be between 90/60 and 120/80 mmHg."
-      },
-      {
-        "id": 2,
-        "question": "Which of the following is a common side effect of diuretics?",
-        "answers": ["Hyperkalemia", "Hypokalemia", "Hypoglycemia"],
-        "correct": 1,
-        "explanation": "Diuretics are known to cause low potassium levels (hypokalemia) in many patients."
-      },
-      {
-        "id": 3,
-        "question": "A patient is prescribed a medication that could cause dizziness. What should be advised?",
-        "answers": ["Avoid sudden position changes", "Take it with lots of water", "Take the medication at night"],
-        "correct": 0,
-        "explanation": "Patients should be advised to avoid sudden changes in position to prevent falls due to dizziness."
-      }
-    ]
-  }
-  
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the normal blood pressure range for an adult?",
+      "answers": [
+        "90/60 to 120/80 mmHg",
+        "70/40 to 90/60 mmHg",
+        "130/90 to 150/100 mmHg"
+      ],
+      "correct": 0,
+      "explanation": "Normal adult blood pressure is considered to be between 90/60 and 120/80 mmHg."
+    },
+    {
+      "id": 2,
+      "question": "Which of the following is a common side effect of diuretics?",
+      "answers": [
+        "Hyperkalemia",
+        "Hypokalemia",
+        "Hypoglycemia"
+      ],
+      "correct": 1,
+      "explanation": "Diuretics are known to cause low potassium levels (hypokalemia)."
+    },
+    {
+      "id": 3,
+      "question": "A patient is prescribed a medication that could cause dizziness. What should be advised?",
+      "answers": [
+        "Avoid sudden position changes",
+        "Take it with lots of water",
+        "Take the medication at night"
+      ],
+      "correct": 0,
+      "explanation": "Patients should be advised to avoid sudden changes in position to prevent falls due to dizziness."
+    },
+    {
+      "id": 4,
+      "question": "What is the primary purpose of the NCLEX?",
+      "answers": [
+        "To serve as a licensing requirement for nurses",
+        "To provide a comprehensive assessment of a candidate's nursing knowledge and skills",
+        "To certify a nurse’s ability to administer medications safely"
+      ],
+      "correct": 1,
+      "explanation": "Correct! The NCLEX assesses nursing knowledge and skills to ensure safe practice. For more details, review the <a href='study-guides/nclex-overview.html'>NCLEX Overview & Strategies guide</a>."
+    },
+    {
+      "id": 5,
+      "question": "Which question type is NOT featured on the NCLEX?",
+      "answers": [
+        "Multiple Choice",
+        "True/False",
+        "Essay question"
+      ],
+      "correct": 2,
+      "explanation": "Essay questions are not part of the NCLEX format. For further details, check the <a href='study-guides/nclex-overview.html'>NCLEX Overview & Strategies guide</a>."
+    },
+    {
+      "id": 6,
+      "question": "What is a common side effect of opioids in pharmacology?",
+      "answers": [
+        "Respiratory depression",
+        "Increased heart rate",
+        "Hyperglycemia"
+      ],
+      "correct": 0,
+      "explanation": "Opioids can cause respiratory depression. Review the <a href='study-guides/pharmacology.html'>Pharmacology Essentials for the NCLEX</a> for more details."
+    },
+    {
+      "id": 7,
+      "question": "Which patient assessment parameter is most critical when administering beta-blockers?",
+      "answers": [
+        "Temperature",
+        "Heart rate",
+        "Blood sugar level"
+      ],
+      "correct": 1,
+      "explanation": "Beta-blockers require close monitoring of heart rate. See the <a href='study-guides/medical-surgical.html'>Medical-Surgical Nursing Essentials</a> guide for more context."
+    },
+    {
+      "id": 8,
+      "question": "What is a key intervention during prenatal care?",
+      "answers": [
+        "Administering folic acid supplements",
+        "Scheduling daily physical therapy",
+        "Inhibiting labor contractions"
+      ],
+      "correct": 0,
+      "explanation": "Folic acid supplementation is crucial in prenatal care. For more information, check the <a href='study-guides/maternal-child.html'>Maternal-Child Nursing Essentials</a> guide."
+    },
+    {
+      "id": 9,
+      "question": "What is a primary goal of therapeutic communication in mental health nursing?",
+      "answers": [
+        "Establish rapport with patients",
+        "Diagnose psychiatric disorders",
+        "Administer medications without explanation"
+      ],
+      "correct": 0,
+      "explanation": "Therapeutic communication focuses on building trust with patients. Learn more in the <a href='study-guides/mental-health.html'>Mental Health Nursing Essentials</a> guide."
+    },
+    {
+      "id": 10,
+      "question": "Which condition is characterized by the presence of endometrial tissue outside the uterus?",
+      "answers": [
+        "Infertility",
+        "Endometriosis",
+        "Menopause"
+      ],
+      "correct": 1,
+      "explanation": "Endometriosis is defined by the presence of endometrial tissue outside the uterus. Refer to the <a href='study-guides/obstetric-gynecological.html'>Obstetric‑Gynecological Nursing Essentials</a> guide for more details."
+    },
+    {
+      "id": 11,
+      "question": "What is a primary focus when developing patient care plans in Medical-Surgical Nursing?",
+      "answers": [
+        "Critiquing patient lifestyle",
+        "Creating detailed medication and monitoring plans",
+        "Focusing solely on surgical interventions"
+      ],
+      "correct": 1,
+      "explanation": "Developing detailed care plans is crucial for effective patient management. Learn more in the <a href='study-guides/medical-surgical.html'>Medical-Surgical Nursing Essentials</a> guide."
+    },
+    {
+      "id": 12,
+      "question": "Which strategy is recommended for managing time during the NCLEX?",
+      "answers": [
+        "Skipping difficult questions",
+        "Setting a timer",
+        "Answering questions twice rapidly"
+      ],
+      "correct": 1,
+      "explanation": "Using a timer can help you allocate your exam time efficiently. More strategies can be found in the <a href='study-guides/nclex-overview.html'>NCLEX Overview & Strategies</a> guide."
+    },
+    {
+      "id": 13,
+      "question": "Which suffix is common among ACE Inhibitors?",
+      "answers": [
+        "-pril",
+        "-olol",
+        "-statin"
+      ],
+      "correct": 0,
+      "explanation": "ACE Inhibitors typically end with -pril. For further details, see the <a href='study-guides/pharmacology.html'>Pharmacology Essentials for the NCLEX</a> guide."
+    },
+    {
+      "id": 14,
+      "question": "What is a key focus during labor and delivery management in maternal-child nursing?",
+      "answers": [
+        "Monitoring fetal heart rate",
+        "Administering high doses of pain medication",
+        "Neglecting maternal comfort"
+      ],
+      "correct": 0,
+      "explanation": "Monitoring fetal heart rate is essential during labor and delivery. Refer to the <a href='study-guides/maternal-child.html'>Maternal-Child Nursing Essentials</a> guide for more information."
+    },
+    {
+      "id": 15,
+      "question": "Which disorder is characterized by fluctuations between depressive and manic episodes?",
+      "answers": [
+        "Depression",
+        "Schizophrenia",
+        "Bipolar Disorder"
+      ],
+      "correct": 2,
+      "explanation": "Bipolar Disorder involves swings between depressive and manic states. Read more in the <a href='study-guides/mental-health.html'>Mental Health Nursing Essentials</a> guide."
+    }
+  ]
+}
