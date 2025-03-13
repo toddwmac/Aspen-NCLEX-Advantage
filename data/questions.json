@@ -1,0 +1,30 @@
+{
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the normal blood pressure range for an adult?",
+        "answers": [
+          "90/60 to 120/80 mmHg",
+          "70/40 to 90/60 mmHg",
+          "130/90 to 150/100 mmHg"
+        ],
+        "correct": 0,
+        "explanation": "Normal adult blood pressure is considered to be between 90/60 and 120/80 mmHg."
+      },
+      {
+        "id": 2,
+        "question": "Which of the following is a common side effect of diuretics?",
+        "answers": ["Hyperkalemia", "Hypokalemia", "Hypoglycemia"],
+        "correct": 1,
+        "explanation": "Diuretics are known to cause low potassium levels (hypokalemia) in many patients."
+      },
+      {
+        "id": 3,
+        "question": "A patient is prescribed a medication that could cause dizziness. What should be advised?",
+        "answers": ["Avoid sudden position changes", "Take it with lots of water", "Take the medication at night"],
+        "correct": 0,
+        "explanation": "Patients should be advised to avoid sudden changes in position to prevent falls due to dizziness."
+      }
+    ]
+  }
+  

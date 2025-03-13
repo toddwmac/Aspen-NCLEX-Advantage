@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aspen NCLEX Advantage</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Aspen NCLEX Advantage</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#study-guides">Study Guides</a></li>
+          <li><a href="#practice-questions">Practice Questions</a></li>
+          <li><a href="#training-materials">Training Materials</a></li>
+          <li><a href="#tips">Tips &amp; Tricks</a></li>
+          <li><a href="#progress-tracker">Progress Tracker</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Home Section -->
+    <section id="home" class="content-section">
+      <div class="container">
+        <h2>Welcome to Aspen NCLEX Advantage</h2>
+        <p>
+          Your comprehensive NCLEX study guide and resource hub. Explore interactive quizzes, in-depth study guides, and exam strategies. Let’s begin your journey to NCLEX success!
+        </p>
+      </div>
+    </section>
+
+    <!-- Study Guides Section -->
+    <section id="study-guides" class="content-section">
+      <div class="container">
+        <h2>NCLEX Study Guides</h2>
+        <article>
+          <h3>Pharmacology</h3>
+          <p>Comprehensive guides on medications, dosing, and administration.</p>
+        </article>
+        <article>
+          <h3>Medical-Surgical Nursing</h3>
+          <p>Detailed reviews for a variety of patient care scenarios.</p>
+        </article>
+        <article>
+          <h3>Maternal-Child Nursing</h3>
+          <p>Focused content on maternal and pediatric care.</p>
+        </article>
+        <article>
+          <h3>Mental Health Nursing</h3>
+          <p>Guidance on psychiatric nursing and patient care considerations.</p>
+        </article>
+        <!-- Add additional topics as desired -->
+      </div>
+    </section>
+
+    <!-- Practice Questions Section -->
+    <section id="practice-questions" class="content-section">
+      <div class="container">
+        <h2>Practice Questions</h2>
+        <p>
+          Test your knowledge with our interactive quiz. Your progress is automatically saved so that you can return where you left off.
+        </p>
+        <div id="quiz-container">
+          <!-- Quiz content will be injected by JavaScript -->
+          <div id="question-container">
+            <h3 id="question-text"></h3>
+            <ul id="answers-list">
+              <!-- Answer options appended here -->
+            </ul>
+          </div>
+          <div id="feedback"></div>
+          <button id="next-btn" class="btn">Next Question</button>
+          <button id="reset-btn" class="btn">Reset Progress</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Training Materials Section -->
+    <section id="training-materials" class="content-section">
+      <div class="container">
+        <h2>Training Materials</h2>
+        <p>
+          Access detailed lessons, multimedia content, and interactive training modules to reinforce your NCLEX preparation.
+        </p>
+        <!-- Example multimedia: replace the iframe src with a valid video URL -->
+        <div class="video-container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/dummyvideo"
+            title="NCLEX Training Video"
+            frameborder="0"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tips & Tricks Section -->
+    <section id="tips" class="content-section">
+      <div class="container">
+        <h2>Tips &amp; Tricks</h2>
+        <ul>
+          <li>Set a regular study schedule and stick to it.</li>
+          <li>Practice questions daily to build confidence.</li>
+          <li>Focus on understanding the rationale behind each answer.</li>
+          <li>Utilize mnemonics and memory aids for complex topics.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Progress Tracker Section -->
+    <section id="progress-tracker" class="content-section">
+      <div class="container">
+        <h2>Your Progress Tracker</h2>
+        <p>The tracker below reflects your ongoing quiz performance.</p>
+        <div id="progress">
+          <p>Questions Answered: <span id="questions-answered">0</span></p>
+          <p>Correct Answers: <span id="correct-answers">0</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>
+        &copy; 2023 Aspen NCLEX Advantage. All content is for educational and practice purposes only and does not represent the official NCLEX exam.
+      </p>
+      <p>Developed for aspiring nursing professionals.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
