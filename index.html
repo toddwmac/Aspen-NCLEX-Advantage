@@ -14,10 +14,9 @@
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#study-guides">Study Guides</a></li>
-          <li><a href="#practice-questions">Practice Questions</a></li>
           <li><a href="#training-materials">Training Materials</a></li>
+          <li><a href="#practice-questions">Practice Questions</a></li>
           <li><a href="#tips">Tips &amp; Tricks</a></li>
-          <li><a href="#progress-tracker">Progress Tracker</a></li>
         </ul>
       </nav>
     </div>
@@ -44,27 +43,6 @@
           <li><a href="study-guides/maternal-child.html">Maternal-Child Nursing Essentials for the NCLEX</a></li>
           <li><a href="study-guides/mental-health.html">Mental Health Nursing Essentials for the NCLEX</a></li>
         </ul>
-        
-      </div>
-    </section>
-
-    <!-- Practice Questions Section -->
-    <section id="practice-questions" class="content-section">
-      <div class="container">
-        <h2>Practice Questions</h2>
-        <p>
-          Test your knowledge with our interactive quiz. Your progress is automatically saved so that you can return where you left off.
-        </p>
-        <div id="quiz-container">
-          <!-- Quiz content will be injected by JavaScript -->
-          <div id="question-container">
-            <h3 id="question-text"></h3>
-            <ul id="answers-list"></ul>
-          </div>
-          <div id="feedback"></div>
-          <button id="next-btn" class="btn">Next Question</button>
-          <button id="reset-btn" class="btn">Reset Progress</button>
-        </div>
       </div>
     </section>
 
@@ -88,6 +66,32 @@
       </div>
     </section>
 
+    <!-- Practice Questions Section (Now includes Progress Tracker) -->
+    <section id="practice-questions" class="content-section">
+      <div class="container">
+        <h2>Practice Questions</h2>
+        <p>
+          Test your knowledge with our interactive quiz. Your progress is automatically saved so you can return where you left off.
+        </p>
+        <div id="quiz-container">
+          <!-- Quiz content will be injected by JavaScript -->
+          <div id="question-container">
+            <h3 id="question-text"></h3>
+            <ul id="answers-list"></ul>
+          </div>
+          <div id="feedback"></div>
+          <button id="next-btn" class="btn">Next Question</button>
+          <button id="reset-btn" class="btn">Reset Progress</button>
+        </div>
+        <!-- Embedded Progress Tracker -->
+        <div id="progress-tracker">
+          <h3>Your Progress Tracker</h3>
+          <p>Questions Answered: <span id="questions-answered">0</span></p>
+          <p>Correct Answers: <span id="correct-answers">0</span></p>
+        </div>
+      </div>
+    </section>
+
     <!-- Tips & Tricks Section -->
     <section id="tips" class="content-section">
       <div class="container">
@@ -100,18 +104,6 @@
         </ul>
       </div>
     </section>
-
-    <!-- Progress Tracker Section -->
-    <section id="progress-tracker" class="content-section">
-      <div class="container">
-        <h2>Your Progress Tracker</h2>
-        <p>The tracker below reflects your ongoing quiz performance.</p>
-        <div id="progress">
-          <p>Questions Answered: <span id="questions-answered">0</span></p>
-          <p>Correct Answers: <span id="correct-answers">0</span></p>
-        </div>
-      </div>
-    </section>
   </main>
 
   <footer>
@@ -122,8 +114,7 @@
       <p>Developed for aspiring nursing professionals.</p>
     </div>
   </footer>
-
+  
   <script src="js/main.js"></script>
 </body>
 </html>
-
