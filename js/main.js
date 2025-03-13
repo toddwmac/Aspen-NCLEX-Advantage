@@ -4,16 +4,16 @@ document.addEventListener("DOMContentLoaded", function () {
   let quizQuestions = [];
   let currentQuestionIndex = 0;
   let userAnswers = [];
-  let quizLength = 0; // Number of questions selected by the user
+  let quizLength = 0; // Number of questions the user will answer
 
-  // DOM Elements
+  // DOM Elements from the page
   const quizContainer = document.getElementById("quiz-container");
   const questionContainer = document.getElementById("question-container");
   const answersListEl = document.getElementById("answers-list");
   const nextBtn = document.getElementById("next-btn");
   const resetBtn = document.getElementById("reset-btn");
 
-  // Create and insert quiz setup panel (for selecting question count)
+  // Create and insert the quiz setup panel for question count selection
   let quizSetupDiv = document.createElement("div");
   quizSetupDiv.id = "quiz-setup";
   quizSetupDiv.style.marginBottom = "20px";
@@ -24,14 +24,14 @@ document.addEventListener("DOMContentLoaded", function () {
   `;
   quizContainer.insertBefore(quizSetupDiv, quizContainer.firstChild);
 
-  // Create a progress indicator element and append it to the quiz container
+  // Create a progress indicator element and insert it into the container
   let progressIndicator = document.createElement("div");
   progressIndicator.id = "progress-indicator";
   progressIndicator.style.marginTop = "10px";
   progressIndicator.style.fontWeight = "bold";
   quizContainer.appendChild(progressIndicator);
 
-  // Get references for the quiz setup input & start button
+  // Get references for elements in the quiz setup panel
   let startBtn = document.getElementById("start-btn");
   let quizLengthInput = document.getElementById("quiz-length");
 
@@ -40,7 +40,6 @@ document.addEventListener("DOMContentLoaded", function () {
     .then((response) => response.json())
     .then((data) => {
       questions = data.questions;
-      // (Optional: shuffle questions here if desired)
     })
     .catch((error) => {
       console.error("Error loading questions:", error);
@@ -48,80 +47,90 @@ document.addEventListener("DOMContentLoaded", function () {
         "Failed to load questions. Please try again later.";
     });
 
-  // Function to start the quiz
+  // Start Quiz button event
   startBtn.addEventListener("click", function () {
     quizLength = parseInt(quizLengthInput.value);
     if (isNaN(quizLength) || quizLength < 1 || quizLength > 15) {
       alert("Please select a valid number between 1 and 15.");
       return;
     }
-    // For simplicity, take the first quizLength questions.
+    // For simplicity, use the first N questions. (You may shuffle if desired.)
     quizQuestions = questions.slice(0, quizLength);
-    // Set up userAnswers array (one null value per question)
     userAnswers = new Array(quizQuestions.length).fill(null);
     currentQuestionIndex = 0;
 
-    // Hide the quiz setup panel after starting the quiz
+    // Hide the quiz setup panel
     quizSetupDiv.style.display = "none";
 
-    // Display the first question and update progress
+    // Display the first question and update the progress indicator
     showQuestion();
     updateProgress();
   });
 
-  // Function to display the current question and its answer options
+  // Display the current question and its answer options
   function showQuestion() {
-    // If we've gone through all questions, show summary
     if (currentQuestionIndex >= quizQuestions.length) {
       showSummary();
       return;
     }
-    // Clear existing question and answer content
+
+    // Clear any existing content
     questionContainer.innerHTML = "";
     answersListEl.innerHTML = "";
 
     let currentQuestion = quizQuestions[currentQuestionIndex];
 
-    // Create and append the question element
+    // Create the question element
     let questionElem = document.createElement("h3");
     questionElem.textContent = currentQuestion.question;
     questionContainer.appendChild(questionElem);
 
-    // Loop over answer choices and create clickable list items
+    // For each answer option, create a clickable list item
     currentQuestion.answers.forEach((answer, index) => {
       let answerOption = document.createElement("li");
       answerOption.textContent = answer;
       answerOption.className = "answer-option";
-      // When an answer is clicked, record the answer and highlight it
+      // Apply some inline styling (in addition to CSS) to ensure it’s visible
+      answerOption.style.display = "block";
+      answerOption.style.margin = "8px 0";
+      answerOption.style.padding = "10px";
+      answerOption.style.border = "1px solid #ccc";
+      answerOption.style.borderRadius = "3px";
+      answerOption.style.backgroundColor = "#e9ecef";
+      answerOption.style.cursor = "pointer";
+
+      // When the user clicks an answer option...
       answerOption.addEventListener("click", function () {
-        // Record answer only if not already answered
+        // Only record if no answer is yet recorded for this question
         if (userAnswers[currentQuestionIndex] === null) {
           userAnswers[currentQuestionIndex] = index;
           highlightSelection(index);
         }
       });
+
       answersListEl.appendChild(answerOption);
     });
   }
 
-  // Function to highlight the selected answer option and disable further changes
+  // Highlight the selected answer option and disable further changes
   function highlightSelection(selectedIndex) {
-    const allOptions = document.querySelectorAll(".answer-option");
-    allOptions.forEach((option, idx) => {
-      if (idx === selectedIndex) {
-        option.style.backgroundColor = "#d4edda"; // light green to indicate selection
+    const allOptions = answersListEl.getElementsByTagName("li");
+    for (let i = 0; i < allOptions.length; i++) {
+      // Highlight the selected option in light green
+      if (i === selectedIndex) {
+        allOptions[i].style.backgroundColor = "#d4edda";
       }
-      // Disable clicking on all options once an answer is selected
-      option.style.pointerEvents = "none";
-    });
+      // Disable further clicking on all options
+      allOptions[i].style.pointerEvents = "none";
+    }
   }
 
-  // Update the progress indicator (e.g., "Question 1 of 10")
+  // Update the progress indicator
   function updateProgress() {
     progressIndicator.textContent = `Question ${currentQuestionIndex + 1} of ${quizQuestions.length}`;
   }
 
-  // "Next Question" button event: validate answer selection, move to next question or show summary if done
+  // Handle the Next Question button click
   nextBtn.addEventListener("click", function () {
     if (userAnswers[currentQuestionIndex] === null) {
       alert("Please select an answer before proceeding.");
@@ -136,22 +145,20 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // "Reset Progress" button: Allow the student to restart the quiz
+  // Reset Progress button to start the quiz over
   resetBtn.addEventListener("click", function () {
     if (confirm("Reset your quiz progress?")) {
-      // Restore the quiz setup panel and clear current data
       quizSetupDiv.style.display = "block";
       questionContainer.innerHTML = "";
       answersListEl.innerHTML = "";
       progressIndicator.textContent = "";
       nextBtn.style.display = "inline-block";
-      // Reset advanced quiz variables
       currentQuestionIndex = 0;
       userAnswers = [];
     }
   });
 
-  // Display the final summary after all questions are answered
+  // Display the final summary after the quiz is completed
   function showSummary() {
     // Clear the quiz area
     questionContainer.innerHTML = "";
@@ -159,12 +166,11 @@ document.addEventListener("DOMContentLoaded", function () {
     progressIndicator.textContent = "";
     nextBtn.style.display = "none";
 
-    // Compute overall score and generate summary details
+    // Compute the overall score and construct the summary HTML
     let correctCount = 0;
     let summaryHTML = "<h3>Quiz Summary</h3>";
     summaryHTML += `<p>Total Questions: ${quizQuestions.length}</p>`;
 
-    // Loop through each question and display details
     quizQuestions.forEach((q, idx) => {
       let correctAnsIndex = q.correct;
       let userAnsIndex = userAnswers[idx];
@@ -180,16 +186,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     summaryHTML += `<h4>Your Score: ${correctCount} out of ${quizQuestions.length}</h4>`;
-
-    // Display the generated summary HTML
     questionContainer.innerHTML = summaryHTML;
 
-    // Create and append a restart button so that the student can try the quiz again
+    // Create a Restart Quiz button on the summary screen
     let restartBtn = document.createElement("button");
     restartBtn.textContent = "Restart Quiz";
-    restartBtn.classList.add("btn");
+    restartBtn.className = "btn";
     restartBtn.addEventListener("click", function () {
-      // Reset quiz variables and restore the initial quiz setup view
       currentQuestionIndex = 0;
       userAnswers = [];
       quizSetupDiv.style.display = "block";
