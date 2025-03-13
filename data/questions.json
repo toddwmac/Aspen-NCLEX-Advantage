@@ -42,7 +42,7 @@
         "To certify a nurse’s ability to administer medications safely"
       ],
       "correct": 1,
-      "explanation": "Correct! The NCLEX assesses nursing knowledge and skills to ensure safe practice. For more details, review the <a href='study-guides/nclex-overview.html'>NCLEX Overview & Strategies guide</a>."
+      "explanation": "The NCLEX assesses nursing knowledge and skills to ensure safe practice. For details, review the NCLEX Overview & Strategies guide."
     },
     {
       "id": 5,
@@ -53,7 +53,7 @@
         "Essay question"
       ],
       "correct": 2,
-      "explanation": "Essay questions are not part of the NCLEX format. For further details, check the <a href='study-guides/nclex-overview.html'>NCLEX Overview & Strategies guide</a>."
+      "explanation": "Essay questions are not part of the NCLEX format. See the NCLEX Overview & Strategies guide."
     },
     {
       "id": 6,
@@ -64,7 +64,7 @@
         "Hyperglycemia"
       ],
       "correct": 0,
-      "explanation": "Opioids can cause respiratory depression. Review the <a href='study-guides/pharmacology.html'>Pharmacology Essentials for the NCLEX</a> for more details."
+      "explanation": "Opioids can cause respiratory depression. Review the Pharmacology Essentials for the NCLEX guide for more details."
     },
     {
       "id": 7,
@@ -75,7 +75,7 @@
         "Blood sugar level"
       ],
       "correct": 1,
-      "explanation": "Beta-blockers require close monitoring of heart rate. See the <a href='study-guides/medical-surgical.html'>Medical-Surgical Nursing Essentials</a> guide for more context."
+      "explanation": "Beta-blockers require close monitoring of heart rate. See the Medical-Surgical Nursing Essentials guide for more context."
     },
     {
       "id": 8,
@@ -86,7 +86,7 @@
         "Inhibiting labor contractions"
       ],
       "correct": 0,
-      "explanation": "Folic acid supplementation is crucial in prenatal care. For more information, check the <a href='study-guides/maternal-child.html'>Maternal-Child Nursing Essentials</a> guide."
+      "explanation": "Folic acid supplementation is crucial in prenatal care. For more information, check the Maternal-Child Nursing Essentials guide."
     },
     {
       "id": 9,
@@ -97,7 +97,7 @@
         "Administer medications without explanation"
       ],
       "correct": 0,
-      "explanation": "Therapeutic communication focuses on building trust with patients. Learn more in the <a href='study-guides/mental-health.html'>Mental Health Nursing Essentials</a> guide."
+      "explanation": "Therapeutic communication focuses on building trust with patients. Learn more in the Mental Health Nursing Essentials guide."
     },
     {
       "id": 10,
@@ -108,7 +108,7 @@
         "Menopause"
       ],
       "correct": 1,
-      "explanation": "Endometriosis is defined by the presence of endometrial tissue outside the uterus. Refer to the <a href='study-guides/obstetric-gynecological.html'>Obstetric‑Gynecological Nursing Essentials</a> guide for more details."
+      "explanation": "Endometriosis is defined by the presence of endometrial tissue outside the uterus. Refer to the Obstetric‑Gynecological Nursing Essentials guide for more details."
     },
     {
       "id": 11,
@@ -119,7 +119,7 @@
         "Focusing solely on surgical interventions"
       ],
       "correct": 1,
-      "explanation": "Developing detailed care plans is crucial for effective patient management. Learn more in the <a href='study-guides/medical-surgical.html'>Medical-Surgical Nursing Essentials</a> guide."
+      "explanation": "Developing detailed care plans is crucial for effective patient management. Learn more in the Medical-Surgical Nursing Essentials guide."
     },
     {
       "id": 12,
@@ -130,7 +130,7 @@
         "Answering questions twice rapidly"
       ],
       "correct": 1,
-      "explanation": "Using a timer can help you allocate your exam time efficiently. More strategies can be found in the <a href='study-guides/nclex-overview.html'>NCLEX Overview & Strategies</a> guide."
+      "explanation": "Using a timer can help you allocate your exam time efficiently. More strategies can be found in the NCLEX Overview & Strategies guide."
     },
     {
       "id": 13,
@@ -141,7 +141,7 @@
         "-statin"
       ],
       "correct": 0,
-      "explanation": "ACE Inhibitors typically end with -pril. For further details, see the <a href='study-guides/pharmacology.html'>Pharmacology Essentials for the NCLEX</a> guide."
+      "explanation": "ACE Inhibitors typically end with -pril. For further details, see the Pharmacology Essentials for the NCLEX guide."
     },
     {
       "id": 14,
@@ -152,7 +152,7 @@
         "Neglecting maternal comfort"
       ],
       "correct": 0,
-      "explanation": "Monitoring fetal heart rate is essential during labor and delivery. Refer to the <a href='study-guides/maternal-child.html'>Maternal-Child Nursing Essentials</a> guide for more information."
+      "explanation": "Monitoring fetal heart rate is essential during labor and delivery. Refer to the Maternal-Child Nursing Essentials guide for more information."
     },
     {
       "id": 15,
@@ -163,7 +163,57 @@
         "Bipolar Disorder"
       ],
       "correct": 2,
-      "explanation": "Bipolar Disorder involves swings between depressive and manic states. Read more in the <a href='study-guides/mental-health.html'>Mental Health Nursing Essentials</a> guide."
+      "explanation": "Bipolar Disorder involves swings between depressive and manic states. Read more in the Mental Health Nursing Essentials guide."
+    },
+    {
+      "id": 16,
+      "question": "The NCLEX exam is available in formats other than multiple-choice.",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correct": 0,
+      "explanation": "The NCLEX includes various formats such as multiple-choice, true/false, fill-in-the-blank, and scenario-based questions."
+    },
+    {
+      "id": 17,
+      "question": "True or False: True/False questions require you to decide whether a statement is accurate.",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correct": 0,
+      "explanation": "True/False questions test your ability to assess the accuracy of a statement."
+    },
+    {
+      "id": 18,
+      "question": "True or False: All NCLEX questions are case-sensitive.",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correct": 1,
+      "explanation": "NCLEX questions are not case-sensitive; they focus on your understanding of the material."
+    },
+    {
+      "id": 19,
+      "question": "True or False: Time management is a key factor in successfully completing the NCLEX.",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correct": 0,
+      "explanation": "Effectively managing your time ensures you complete all questions and avoid rushing."
+    },
+    {
+      "id": 20,
+      "question": "True or False: Clinical judgment is critical to success on the NCLEX.",
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correct": 0,
+      "explanation": "Clinical judgment is essential for safe and effective nursing practice and is heavily tested on the NCLEX."
     }
   ]
 }
