@@ -35,25 +35,6 @@
       </div>
     </section>
 
-    <!-- Practice Questions Section -->
-    <section id="practice-questions" class="content-section">
-      <div class="container">
-        <h2>Practice Questions</h2>
-        <p>
-          Test your knowledge with our interactive quiz. Choose the number of questions you want (up to 15) and follow the progress indicator as you answer. Once complete, you’ll receive a summary of your performance.
-        </p>
-        <!-- Quiz Container: all dynamic quiz content is inserted here by main.js -->
-        <div id="quiz-container">
-          <!-- Required DOM elements for quiz UI -->
-          <div id="question-container"></div>
-          <ul id="answers-list"></ul>
-          <button id="next-btn" class="btn">Next Question</button>
-          <button id="reset-btn" class="btn">Reset Progress</button>
-          <!-- Progress indicator will also be appended dynamically. -->
-        </div>
-      </div>
-    </section>
-
     <!-- Study Guides Section -->
     <section id="study-guides" class="content-section">
       <div class="container">
@@ -76,15 +57,33 @@
         <p>
           Access detailed lessons, multimedia content, and interactive training modules to reinforce your NCLEX preparation.
         </p>
-        <div class="video-container">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/dummyvideo" title="NCLEX Training Video" frameborder="0" allowfullscreen></iframe>
-        </div>
+        <!-- Placeholder item -->
+        <p><em>Placeholder: More training materials coming soon...</em></p>
+        <!-- Resources -->
         <h3>Additional Training Resources:</h3>
         <ul>
           <li><a href="https://nclexmastery.com" target="_blank">NCLEX Mastery</a> – Comprehensive video lectures and practice questions.</li>
           <li><a href="https://www.nursing.com" target="_blank">Nursing.com NCLEX Prep</a> – Expert reviews and interactive study modules.</li>
           <li><a href="https://www.khanacademy.org/science/health-and-medicine" target="_blank">Khan Academy: Health &amp; Medicine</a> – Free educational content in health and medicine.</li>
         </ul>
+      </div>
+    </section>
+
+    <!-- Practice Questions Section (Moved below Study Guides and Training Materials) -->
+    <section id="practice-questions" class="content-section">
+      <div class="container">
+        <h2>Practice Questions</h2>
+        <p>
+          Test your knowledge with our interactive quiz. Choose the number of questions you want (up to 15) and follow the progress indicator as you answer.
+          Once complete, you’ll receive a summary of your performance.
+        </p>
+        <!-- Quiz Container: all dynamic quiz content is injected here by main.js -->
+        <div id="quiz-container">
+          <div id="question-container"></div>
+          <ul id="answers-list"></ul>
+          <button id="next-btn" class="btn">Next Question</button>
+          <button id="reset-btn" class="btn">Reset Progress</button>
+        </div>
       </div>
     </section>
 
@@ -99,9 +98,9 @@
           <li><strong>Review rationales:</strong> Understand why answers are correct or incorrect rather than memorizing facts.</li>
           <li><strong>Take regular breaks:</strong> Short, frequent breaks help maintain focus and prevent burnout.</li>
           <li><strong>Utilize diverse resources:</strong> Supplement your study with videos, articles, and interactive modules.</li>
-          <li><strong>Reflect on mistakes:</strong> Analyze your errors to identify knowledge gaps and improve your approach.</li>
+          <li><strong>Reflect on mistakes:</strong> Analyze errors to identify knowledge gaps and improve your approach.</li>
           <li><strong>Stay updated:</strong> Keep abreast of any changes to NCLEX formats and key nursing guidelines.</li>
-          <li><strong>Incorporate relaxation techniques:</strong> Use mindfulness and deep-breathing exercises to manage stress.</li>
+          <li><strong>Practice relaxation techniques:</strong> Use mindfulness and deep-breathing exercises to manage stress.</li>
         </ul>
       </div>
     </section>
